@@ -6,7 +6,7 @@ import Header from './components/Header/header';
 
 describe('./src/App.js',() => {
   const getComponent = () => {
-    return mount(<App />);
+    return mount(<App/>);
   }
 
   let component;
@@ -22,7 +22,7 @@ describe('./src/App.js',() => {
   })
 
   it('Should App Should have Header component',()=>{
-    const homecomponent = component.find(Header);
+    const homecomponent = component.find('Header');
     expect(homecomponent).toHaveLength(1);
   })
 })

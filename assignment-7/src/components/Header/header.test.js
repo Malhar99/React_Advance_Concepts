@@ -27,6 +27,6 @@ describe('./src/components/Header/header.js',() => {
 
   it('Should App Should have h2 with text component',()=>{
     const heading = component.find('h2').text();
-    expect(heading).toContain('Expense Tracker')
+    expect(heading).toContain('title')
   })
 })

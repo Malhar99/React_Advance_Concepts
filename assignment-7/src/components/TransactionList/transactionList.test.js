@@ -44,6 +44,6 @@ describe('./src/components/TransactionList/transactionList.js',() => {
 
   it('Should App Should have h3 with text component',()=>{
     const heading = component.find('h3').text();
-    expect(heading).toContain('History')
+    expect(heading).toContain('history')
   })
 })
