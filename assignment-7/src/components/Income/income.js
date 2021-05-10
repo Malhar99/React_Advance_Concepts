@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { GlobalContext } from "../context/globalState";
-import { useI18n } from '../i18n';
+import { GlobalContext } from "../../context/globalState";
+import { useI18n } from '../../i18n';
 function Income(props) {
   const { t } = useI18n()
   const {
@@ -21,13 +21,13 @@ function Income(props) {
   return (
         <div class="inc-exp-container">
           <div>
-            <h4>{t("income")}</h4>
+            <h4 className="income-title">{t("income")}</h4>
             <p id="money-plus" class="money plus">
               +${income}
             </p>
           </div>
           <div>
-            <h4>{t("expense")}</h4>
+            <h4 className="expense-title">{t("expense")}</h4>
             <p id="money-minus" class="money minus">
               -${expense}
             </p>
