@@ -1,0 +1,14 @@
+{
+  "title": "Suivi des dépenses",
+  "your_balance": "VOTRE SOLDE",
+  "history":"Histoire",
+  "add_new_transaction":"Ajouter une nouvelle transaction",
+  "text":"Texte",
+  "income":"LE REVENU",
+  "expense":"FRAIS",
+  "amount":"Montant",
+  "negative-expense":"négatif - dépense",
+  "positive-income":"positif - revenu",
+  "add_transaction":"Ajouter une transaction",
+  "expense_transaction":"Transaction de dépenses" 
+}

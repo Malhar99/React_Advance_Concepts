@@ -1,0 +1,14 @@
+{
+  "title": "Onkosten Tracker",
+  "your_balance": "JE BALANS",
+  "history":"Geschiedenis",
+  "add_new_transaction":"Nieuwe transactie toevoegen",
+  "text":"Tekst",
+  "income":"INKOMEN",
+  "expense":"KOSTEN",
+  "amount":"Bedrag",
+  "negative-expense":"negatief - kosten",
+  "positive-income":"positief - inkomen",
+  "add_transaction":"Transactie toevoegen",
+  "expense_transaction":"Kosten Transactie" 
+}
