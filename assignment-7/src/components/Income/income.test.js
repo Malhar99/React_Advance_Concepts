@@ -39,13 +39,13 @@ describe('./src/components/Income/income.js',() => {
   })
 
   it('Should App Should have Income Title',()=>{
-    const heading = component.find('h4.income-title');
-    expect(heading).toContain('INCOME');
+    const heading = component.find('h4.income-title').text();
+    expect(heading).toContain('income');
   })
 
   it('Should App Should have Expense Title',()=>{
     const heading = component.find('h4.expense-title').text();
-    expect(heading).toContain('EXPENSE')
+    expect(heading).toContain('expense')
   })
 
   it('Should have income amount correct',()=>{

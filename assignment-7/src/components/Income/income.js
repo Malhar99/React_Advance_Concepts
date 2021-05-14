@@ -8,7 +8,6 @@ function Income(props) {
   } = useContext(GlobalContext);
 
   const amounts = transactions.map((transaction) => transaction.amount);
-  console.log(transactions.map((transaction) => transaction.amount))
   const income = amounts
     .filter((item) => item > 0)
     .reduce((acc, item) => (acc += item), 0)
@@ -19,16 +18,16 @@ function Income(props) {
   ).toFixed(2);
 
   return (
-        <div class="inc-exp-container">
+        <div className="inc-exp-container">
           <div>
             <h4 className="income-title">{t("income")}</h4>
-            <p id="money-plus" class="money plus">
+            <p id="money-plus" className="money plus">
               +${income}
             </p>
           </div>
           <div>
             <h4 className="expense-title">{t("expense")}</h4>
-            <p id="money-minus" class="money minus">
+            <p id="money-minus" className="money minus">
               -${expense}
             </p>
           </div>

@@ -59,8 +59,8 @@ function AddTransaction(props) {
     <>
         <h3>{t("add_new_transaction")}</h3>
         <form id="form">
-          <div class="form-control">
-            <label for="text">{t("text")}</label>
+          <div className="form-control">
+            <label htmlFor="text">{t("text")}</label>
             <input 
               type="text" 
               value={text} 
@@ -68,8 +68,8 @@ function AddTransaction(props) {
               onChange={(e) => setText(e.target.value)}
             />
           </div>
-          <div class="form-control">
-            <label for="amount">
+          <div className="form-control">
+            <label htmlFor="amount">
               {t("amount")} <br />
               ({t("negative-expense")}, {t("positive-income")})
             </label>
@@ -81,8 +81,8 @@ function AddTransaction(props) {
               onChange={(e) => setamount(e.target.value)}
             />
           </div>
-          <button class="btn-add" onClick={onDeposit}>{t("add_transaction")}</button>
-          <button class="btn-expense" onClick={onExpense}>{t("expense_transaction")}</button>
+          <button className="btn-add" onClick={onDeposit}>{t("add_transaction")}</button>
+          <button className="btn-expense" onClick={onExpense}>{t("expense_transaction")}</button>
         </form>
     </>
   );

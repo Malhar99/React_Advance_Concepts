@@ -6,7 +6,7 @@ module.exports = {
   testRegex: "./*.test.(js)",
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   snapshotSerializers: ["enzyme-to-json/serializer"],
-  setupTestFrameworkScriptFile: "<rootDir>/src/setupTests.js",
+  setupFilesAfterEnv: ["<rootDir>/src/setupTests.js"],
   transformIgnorePatterns: [
     "node_modules/(?!(react-toastify/dist/ReactToastify.css)/)",
   ],

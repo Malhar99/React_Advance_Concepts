@@ -1,4 +1,4 @@
-
+import React from 'react';
 import { GlobalProvider } from "./context/globalState";
 import Toast from "./components/Toast/toast";
 import Header from "./components/Header/header";

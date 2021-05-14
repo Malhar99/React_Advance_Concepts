@@ -13,7 +13,7 @@ function TransactionList(props) {
   return (
     <>
         <h3>{t("history")}</h3>
-        <ul id="list" class="list">
+        <ul id="list" className="list">
           {transactions.map((transaction) => (
             <li className={transaction.amount < 0 ? "minus" : "plus"}>
               {transaction.text}{" "}

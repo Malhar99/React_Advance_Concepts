@@ -1,5 +1,5 @@
 import React from 'React';
-import { mount } from 'enzyme';
+import { mount , shallow } from 'enzyme';
 
 import App from './App';
 import Header from './components/Header/header';
@@ -22,7 +22,7 @@ describe('./src/App.js',() => {
   })
 
   it('Should App Should have Header component',()=>{
-    const homecomponent = component.find('Header');
+    const homecomponent = component.find(Header);
     expect(homecomponent).toHaveLength(1);
   })
 })
