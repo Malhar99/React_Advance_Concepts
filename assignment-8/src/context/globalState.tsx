@@ -7,7 +7,13 @@ import {
   resetErrorAction,
 } from "./appActions";
 
-const initialState = {
+interface transaction {
+  id: number;
+  text: string;
+  amount: number;
+}
+
+const initialState: State = {
   transactions: [],
   error: undefined,
   deleteTransaction: (id: number) => {},
@@ -15,12 +21,6 @@ const initialState = {
   errorHandler: (error: string) => {},
   reseterrorHandler: () => {},
 };
-
-interface transaction {
-  id: number;
-  text: string;
-  amount: number;
-}
 
 interface State {
   transactions: transaction[];
