@@ -4,42 +4,42 @@ import {
   RESET_ERROR,
   SET_ERROR,
 } from "./appActions";
-interface transaction {
+interface TransactionType {
   id: number;
   text: string;
   amount: number;
 }
 interface State {
-  transactions: transaction[];
+  transactions: TransactionType[];
   error: undefined | string;
 }
 
-// interface AddTransactionAction {
-//   type: typeof ADD_TRANSACTION;
-//   payload: transaction;
-// }
+export interface AddTransactionAction {
+  type: typeof ADD_TRANSACTION;
+  payload: TransactionType;
+}
 
-// interface DeleteTransactionAction {
-//   type: typeof DELETE_TRANSACTION;
-//   payload: number;
-// }
+export interface DeleteTransactionAction {
+  type: typeof DELETE_TRANSACTION;
+  payload: number;
+}
 
-// interface SetErrorHandlerAction {
-//   type: typeof SET_ERROR;
-//   payload: string;
-// }
+export interface SetErrorHandlerAction {
+  type: typeof SET_ERROR;
+  payload: string;
+}
 
-// interface ResetErrorHandlerAction {
-//   type: typeof RESET_ERROR;
-//   payload: undefined;
-// }
+export interface ResetErrorHandlerAction {
+  type: typeof RESET_ERROR;
+  payload: any;
+}
 
-// type Action =
-//   | AddTransactionAction
-//   | DeleteTransactionAction
-//   | SetErrorHandlerAction
-//   | ResetErrorHandlerAction;
-export default function AppReducer(state: State, action: any) {
+type Action =
+  | AddTransactionAction
+  | DeleteTransactionAction
+  | SetErrorHandlerAction
+  | ResetErrorHandlerAction;
+export default function AppReducer(state: State, action: Action) {
   switch (action.type) {
     case ADD_TRANSACTION:
       return {
@@ -51,7 +51,7 @@ export default function AppReducer(state: State, action: any) {
       return {
         ...state,
         transactions: state.transactions.filter(
-          (transaction) => transaction.id !== action.payload
+          transaction => transaction.id !== action.payload
         ),
       };
 
