@@ -1,3 +1,0 @@
-import 'intl';
-import 'intl/locale-data/jsonp/fr';
-import 'intl/locale-data/jsonp/nl';
